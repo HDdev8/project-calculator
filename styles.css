@@ -11,34 +11,63 @@
 .calculator {
   display: flex;
   width: 50vw;
-  height: 80vh;
+  height: 85vh;
   flex-direction: column;
-  background-color: #2d3131;
+  background-color: #f3eed94f;
   justify-content: center;
   border-radius: 10px;
+  border: #2d313155 solid 1px;
 }
 .display-sector {
   display: flex;
   width: 47vw;
   height: 15vh;
-  background-color: #747c81d2;
+  background-color: #747c8147;
+  border: #2d31315a solid 1px;
   border-radius: 10px;
-  margin: 1vh 1.5vw 1vh 1.5vw;
+  color: seashell;
+  text-shadow: 0 0 2px black;
+  font-size: 72px;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0vh 1.5vw 1vh 1.5vw;
+  resize: none;
+  overflow: hidden;
+  word-break: break-word;
 }
 .display {
   display: flex;
+  width: 46vw;
+  height: 15vh;
+  color: seashell;
+  text-shadow: 0 0 2px black;
+  margin-right: -47vw;
+  font-size: 72px;
+  align-items: center;
+  justify-content: flex-end;
+  resize: none;
+  overflow: hidden;
+  word-break: break-word;
+}
+.new-display,
+.error-display {
+  display: flex;
   width: 47vw;
   height: 15vh;
-  /* background-color: #747c81d2;
-  border-radius: 10px;
-  margin: 1vh 1.5vw 1vh 1.5vw; */
+  color: seashell;
+  text-shadow: 0 0 2px black;
+  margin-right: 1vw;
+  font-size: 72px;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  word-break: break-word;
 }
 
 .button-sector {
   height: 65vh;
   width: 50vw;
   display: flex;
-  /* flex-direction: column; */
 }
 .number-side {
   display: flex;
@@ -58,7 +87,6 @@
   justify-content: space-evenly;
   gap: 1px;
   flex: 1;
-  background-color: #2d3131;
   border-radius: 10px;
 }
 .top-row {
@@ -68,7 +96,6 @@
   justify-content: space-evenly;
   align-items: stretch;
   gap: 1px;
-  background-color: #2d3131;
   border-radius: 10px;
 }
 .operator-side {
@@ -89,7 +116,6 @@
   justify-content: space-evenly;
   gap: 1px;
   flex: 1;
-  background-color: #2d3131;
   border-radius: 10px;
 }
 .zero-container {
@@ -98,14 +124,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #2d3131;
   border-radius: 10px;
   margin-left: 1px;
 }
 
 button {
   display: flex;
-  width: 7vw;
+  width: 8vw;
   height: 12vh;
   gap: 1px;
   text-align: center;
@@ -113,34 +138,36 @@ button {
   justify-content: center;
   border-radius: 10px;
   color: seashell;
+  text-shadow: 0 0 1px black;
   font-size: 24px;
   cursor: pointer;
   box-shadow: 0 1px #999;
 }
 .number-button,
 .zero-button {
-  background-color: #422c46db;
-  border: #c7753bd9 solid 1px;
+  color: seashell;
+  background-color: #00bcd482;
+  border: #607d8bab solid 1px;
 }
 .operator-button,
-.operate-button,
+.equals-button,
 .clear-button,
 .delete-button {
-  background-color: #ada9a4d6;
-  border: #71675adc solid 1px;
+  background-color: #ff878edb;
+  border: #e91e635e solid 1px;
 }
 
 .number-button:active,
 .zero-button:active {
-  background-color: #422c46;
+  background-color: #00bbd4d5;
   box-shadow: 0 1px #666;
   transform: translateY(1px);
 }
 .operator-button:active,
-.operate-button:active,
+.equals-button:active,
 .clear-button:active,
 .delete-button:active {
-  background-color: #ada9a4d6;
+  background-color: #fe5a62db;
   box-shadow: 0 1px #333;
   transform: translateY(1px);
 }
