@@ -1,63 +1,69 @@
 * {
   box-sizing: content-box;
-  font-family: "Inconsolata", monospace;
+  font-family: Inconsolata, monospace;
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .calculator {
   display: flex;
-  width: 50vw;
-  height: 85vh;
+  width: 31rem;
+  height: 40rem;
   flex-direction: column;
   background-color: #f3eed94f;
   justify-content: center;
-  border-radius: 10px;
-  border: #2d313155 solid 1px;
+  border-radius: 0.625rem;
+  border: #2d313155 solid 0.0625rem;
+  align-items: center;
 }
+
 .display-sector {
   display: flex;
-  width: 47vw;
-  height: 15vh;
+  width: 29rem;
+  height: 6rem;
   background-color: #747c8147;
-  border: #2d31315a solid 1px;
-  border-radius: 10px;
+  border: #2d31315a solid 0.0625rem;
+  border-radius: 0.625rem;
   color: seashell;
-  text-shadow: 0 0 2px black;
-  font-size: 72px;
+  text-shadow: 0 0 0.125rem black;
+  font-size: 4.5rem;
   align-items: center;
   justify-content: flex-end;
-  margin: 0vh 1.5vw 1vh 1.5vw;
+  margin: 0 1.5vw 1vh;
   resize: none;
   overflow: hidden;
   word-break: break-word;
 }
+
 .display {
   display: flex;
-  width: 46vw;
-  height: 15vh;
+  width: 28rem;
+  height: 6rem;
   color: seashell;
-  text-shadow: 0 0 2px black;
+  text-shadow: 0 0 0.125rem black;
   margin-right: -47vw;
-  font-size: 72px;
+  font-size: 4.5rem;
   align-items: center;
   justify-content: flex-end;
   resize: none;
   overflow: hidden;
   word-break: break-word;
 }
+
 .new-display,
 .error-display {
   display: flex;
-  width: 47vw;
-  height: 15vh;
+  width: 29rem;
+  height: 6rem;
   color: seashell;
-  text-shadow: 0 0 2px black;
+  text-shadow: 0 0 0.125rem black;
   margin-right: 1vw;
-  font-size: 72px;
+  font-size: 4.5rem;
   align-items: center;
   justify-content: flex-end;
   overflow: hidden;
@@ -65,109 +71,119 @@
 }
 
 .button-sector {
-  height: 65vh;
-  width: 50vw;
+  height: 31rem;
+  width: 40rem;
   display: flex;
+  justify-content: center;
 }
+
 .number-side {
   display: flex;
-  width: 37vw;
-  height: 63vh;
+  width: 21rem;
+  height: 31rem;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0vh 0vw 0vh 0.5vw;
+  margin: 0 0 0 0.5vw;
 }
+
 .number-container {
-  width: 35vw;
-  height: 45vh;
+  width: 15rem;
+  height: 20rem;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-evenly;
-  gap: 1px;
+  gap: 0.0625rem;
   flex: 1;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
+
 .top-row {
-  height: 15vh;
+  height: 6rem;
   display: flex;
-  width: 35vw;
+  width: 15rem;
   justify-content: space-evenly;
   align-items: stretch;
-  gap: 1px;
-  border-radius: 10px;
+  gap: 0.0625rem;
+  border-radius: 0.625rem;
 }
+
 .operator-side {
-  width: 13vw;
-  height: 63vh;
+  width: 6rem;
+  height: 31rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0vh 0.5vw 0vh 0vw;
+  margin: 0 0.5vw 0 0;
 }
+
 .operator-container {
-  width: 10vw;
-  height: 60vh;
+  width: 4rem;
+  height: 31rem;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-evenly;
-  gap: 1px;
+  gap: 0.0625rem;
   flex: 1;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
+
 .zero-container {
   height: 15vh;
   width: 37vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border-radius: 10px;
-  margin-left: 1px;
+  border-radius: 0.625rem;
+  margin-left: 0.0625rem;
 }
 
 button {
   display: flex;
-  width: 8vw;
-  height: 12vh;
-  gap: 1px;
+  width: 3rem;
+  height: 5rem;
+  gap: 0.0625rem;
   text-align: center;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   color: seashell;
-  text-shadow: 0 0 1px black;
-  font-size: 24px;
+  text-shadow: 0 0 0.0625rem black;
+  font-size: 1.5rem;
   cursor: pointer;
-  box-shadow: 0 1px #999;
+  box-shadow: 0 0.0625rem #999;
 }
+
 .number-button,
 .zero-button {
   color: seashell;
   background-color: #00bcd482;
-  border: #607d8bab solid 1px;
+  border: #607d8bab solid 0.0625rem;
 }
+
 .operator-button,
 .equals-button,
 .clear-button,
 .delete-button {
   background-color: #ff878edb;
-  border: #e91e635e solid 1px;
+  border: #e91e635e solid 0.0625rem;
 }
 
 .number-button:active,
 .zero-button:active {
   background-color: #00bbd4d5;
-  box-shadow: 0 1px #666;
-  transform: translateY(1px);
+  box-shadow: 0 0.0625rem #666;
+  transform: translateY(0.0625rem);
 }
+
 .operator-button:active,
 .equals-button:active,
 .clear-button:active,
 .delete-button:active {
   background-color: #fe5a62db;
-  box-shadow: 0 1px #333;
-  transform: translateY(1px);
+  box-shadow: 0 0.0625rem #333;
+  transform: translateY(0.0625rem);
 }
