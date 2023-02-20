@@ -221,7 +221,6 @@ button {
 .delete-button {
   background-color: #ff878edb;
   border: #e91e635e solid 0.0625rem;
-  /* height: 4.375rem; */
 }
 
 .number-button:active,
