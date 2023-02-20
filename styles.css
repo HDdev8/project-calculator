@@ -41,6 +41,10 @@
   height: 4.375rem;
 }
 
+button {
+  width: 3.9063rem;
+}
+
 @media (min-width: 30rem) {
   .calculator {
     width: 30rem;
