@@ -41,8 +41,12 @@
   height: 4.375rem;
 }
 
-button {
-  width: 3.9063rem;
+.number-button {
+  width: 3.75rem;
+}
+
+.operator-button {
+  width: 4rem;
 }
 
 @media (min-width: 30rem) {
@@ -61,6 +65,10 @@ button {
   }
   .button-sector {
     width: 28rem;
+  }
+
+  .number-button {
+    width: 4rem;
   }
 
   .operator-button,
