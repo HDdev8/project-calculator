@@ -73,11 +73,23 @@ const clearAll = function () {
   joinSecond;
   calcArray = [];
 };
+
+const mediaQuery = window.matchMedia("(max-width: 30rem)");
+
 const excessError = function () {
-  if (newDisplay.textContent.length > 11) {
-    newDisplay.remove();
-    errorDisplay.textContent = "ERR";
-    displaySector.appendChild(errorDisplay);
+  if (mediaQuery.matches) {
+    if (newDisplay.textContent.length > 7) {
+      newDisplay.remove();
+      errorDisplay.textContent = "ERR";
+      displaySector.appendChild(errorDisplay);
+    }
+  }
+  if (!mediaQuery.matches) {
+    if (newDisplay.textContent.length > 11) {
+      newDisplay.remove();
+      errorDisplay.textContent = "ERR";
+      displaySector.appendChild(errorDisplay);
+    }
   }
 };
 
@@ -96,9 +108,7 @@ const clickNumberButtons = function (e) {
     excessError();
   }
 };
-numButtons.forEach((numButton) =>
-  numButton.addEventListener("click", clickNumberButtons)
-);
+numButtons.forEach((numButton) => numButton.addEventListener("click", clickNumberButtons));
 
 const operate = function (e) {
   removeDisplay();
@@ -207,12 +217,8 @@ const addToAllArray = function (e) {
     allArray.push(`${e.target.textContent}`);
   }
 };
-oppButtons.forEach((oppButton) =>
-  oppButton.addEventListener("click", addToAllArray)
-);
-numButtons.forEach((numButton) =>
-  numButton.addEventListener("click", addToAllArray)
-);
+oppButtons.forEach((oppButton) => oppButton.addEventListener("click", addToAllArray));
+numButtons.forEach((numButton) => numButton.addEventListener("click", addToAllArray));
 
 clearButton.addEventListener("click", (e) => {
   clearAll(e);
